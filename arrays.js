@@ -172,7 +172,7 @@ function Eighth() {
     }
     console.log(count);
 
-}
+};
 
 function Ninth() {
     console.log("---------------");
@@ -185,7 +185,7 @@ function Ninth() {
 
     let arr = Math.random().toString(36).replace(/[^a-z]+/g, '').substring(0, 5);
     console.log(arr);
-}
+};
 
 function Tenth() {
     console.log("---------------");
@@ -214,12 +214,12 @@ function Tenth() {
 
     for (let i = 0; i < 10; i++) {
         math = Math.round(Math.random() * total);
-        element = titleString[math - 1];
+        element = titleString[math];
         console.log(element);
-        titleString.splice(math - 1, 1);
+        titleString.splice(math, 1);
     }
+};
 
-}
     First();
     Second();
     Third();
