@@ -21,7 +21,6 @@ function First() {
 function Second() {
     console.log("---------------");
     console.log("2nd");
-
     /*Sukurti du kintamuosius. 
     Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. 
     Vardą atspausdinti tik didžiosiom raidėm, o pavardę tik mažosioms. 
@@ -30,14 +29,12 @@ function Second() {
 
     let name = "leonardo";
     let surname = "dicaprio";
-
     console.log(name.toUpperCase() + " " + surname.toLowerCase());
 };
 
 function Third() {
     console.log("---------------");
     console.log("3nd");
-
     /*
     Sukurti du kintamuosius. 
     Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. 
@@ -54,7 +51,6 @@ function Third() {
 function Fourth() {
     console.log("---------------");
     console.log("4th");
-
     /*
     Sukurti du kintamuosius. 
     Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. 
@@ -66,14 +62,12 @@ function Fourth() {
     let name = "Javier";
     let surname = "Bardem";
     let mix = name.substring(name.length - 3) + surname.substring(surname.length - 3);
-
     console.log(mix);
 };
 
 function Fith() {
     console.log("---------------");
     console.log("5th");
-
     /*
     Sukurti kintamąjį su stringu: “An American in Paris”. 
     Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  
@@ -88,7 +82,6 @@ function Fith() {
 function Sixth() {
     console.log("---------------");
     console.log("6th");
-
     /*
     Sukurti kintamąjį su stringu: “An American in Paris”. 
     Jame ištrinti visas balses. 
@@ -119,7 +112,6 @@ function Sixth() {
 function Seventh() {
     console.log("---------------");
     console.log("7th");
-
     /*
     Stringe, kurį generuoja toks kodas: 
     "Star Wars: Episode "+ " ".repeat( Math.ceil(Math.random() * 10))+(Math.ceil (Math.random() * 7)+1) + " - A New Hope" 
@@ -131,15 +123,14 @@ function Seventh() {
     let catchEpisode = string.charAt(string.length - 14);
     console.log(catchEpisode);
 
-    //second approach 
-    catchEpisode = string[string.length - 14];
-    console.log(catchEpisode);
+    // //second approach 
+    // catchEpisode = string[string.length - 14];
+    // console.log(catchEpisode);
 };
 
 function Eighth() {
     console.log("---------------");
     console.log("8th");
-
     /*
     Suskaičiuoti kiek stringe 
     “Don't Be a Menace to South Central While Drinking Your Juice in the Hood” 
@@ -158,7 +149,7 @@ function Eighth() {
             count++;
         }
     }
-    console.log(count);
+    console.log(count+ " zodziai(-iu) trumpesniu (ar lygiu) 5 raidems");
 
     title = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
     split = title.split(" ");
@@ -170,14 +161,13 @@ function Eighth() {
             count++;
         }
     }
-    console.log(count);
+    console.log(count+ " zodziai(-iu) trumpesniu (ar lygiu) 5 raidems");
 
 };
 
 function Ninth() {
     console.log("---------------");
     console.log("9th");
-
     /*
     Parašyti kodą, kuris generuotų atsitiktinį stringą 
     iš lotyniškų mažųjų raidžių. Stringo ilgis 3 simboliai.
@@ -190,7 +180,6 @@ function Ninth() {
 function Tenth() {
     console.log("---------------");
     console.log("10th");
-
     /*
     Parašykite kodą, kuris generuotų atsitiktinį stringą 
     su 10 atsitiktine tvarka išdėliotų žodžių, 
@@ -207,17 +196,12 @@ function Tenth() {
     console.log(titleString);
 
     console.log("Words in the string: " +  titleString.length);
-
     for (let i = 0; i < 10; i++) {
         math = Math.floor(Math.random() *  titleString.length);
         element = titleString[math];
         console.log(element);
         titleString.splice(math, 1);
     }
-
-
-
-
 };
 
     First();
