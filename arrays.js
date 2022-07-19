@@ -200,24 +200,24 @@ function Tenth() {
 
     let math;
     let element;
-    let total = 0;
     let title = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
     let title2 = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
     let title3 = title + " " + title2;
     let titleString = title3.split(" ");
     console.log(titleString);
 
-    for (let i = 0; i < titleString.length; i++) {
-        total++;
-    }
-    console.log("Words in the string: " + total);
+    console.log("Words in the string: " +  titleString.length);
 
     for (let i = 0; i < 10; i++) {
-        math = Math.round(Math.random() * total);
+        math = Math.floor(Math.random() *  titleString.length);
         element = titleString[math];
         console.log(element);
         titleString.splice(math, 1);
     }
+
+
+
+
 };
 
     First();
